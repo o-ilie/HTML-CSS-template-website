@@ -91,7 +91,6 @@ body, html {
 .footer{
 	padding-top: 15px;
 	background-color: #dde4fb;
-	float: left;
 	width: 100%;
 }
 
@@ -272,7 +271,6 @@ input[type=text],input[type=email],input[type=tel], textarea {
 	
 	.pag2 {
 	background-image: url('img/101.jpg');
-	min-height: 500px;
 	}
 	
 	#rezerva {
@@ -287,7 +285,39 @@ input[type=text],input[type=email],input[type=tel], textarea {
 	}
 }
 
-@media (max-width: 1125px) {
+
+
+@media (max-width: 700px) {
+	.oferte {
+		width: 25%;
+		margin: 20px;
+		height: 300px;
+	}
+	.pag2 > .oferte > img {
+		width: 100px;
+		height: 100px;
+	}
+	.map > img {
+		height: 300px;
+	}
+	
+	iframe {
+		width: 270px;
+	}
+}
+
+@media (max-width: 600px) {
+	.meniu {
+		width: 53px;
+		font-size: 11px;
+		position: absolute;
+	}
+	
+	#ptext {
+		font-size: 25px;
+		line-height: 45px;
+	}
+	
 	.formular{
 		width: 70%;
 		padding: 10px;
@@ -295,27 +325,23 @@ input[type=text],input[type=email],input[type=tel], textarea {
 	}
 	
 	li {
-		padding-left: 10%;
+		display: block;
+		padding: 0;
 	}
 	
 	#contact {
 		width: 100%;
 	}
-}
-
-@media (max-width: 600px) {
+	
 	.oferte {
-		width: 25%;
-		margin: 20px;
-		height: 300px;
+		width: auto;
+		height: auto;
 	}
-	.pag2 > .oferte > img {
-		width: 145px;
-		height: 100px;
+	
+	#rezerva {
+		padding: 0;
+		margin-top:50px;
+		font-size: 20px;
 	}
-	.map > img {
-		height: 300px;
-	}
+	
 }
-
-
